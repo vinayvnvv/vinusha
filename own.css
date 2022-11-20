@@ -1,0 +1,66 @@
+#location-countdown {
+	position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#location-countdown video {
+	position: absolute;
+	height: 100%;
+	transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+}
+
+#location-countdown .divider-overlay{
+	position:absolute; 
+	top:0; 
+	display:block; 
+	width:100%; 
+	height:100%; 
+	background-color:#000; 
+	opacity:0.3
+}
+#location-countdown #counting {
+    font-size: 36px;
+    line-height: 69px;
+ }
+ @media screen and (min-width: 1070px) {
+ #location-countdown .banner-text  {
+    margin-bottom: 90px;
+ }
+}
+.wedding-item .photo-item > img {
+    height: 310px;
+    object-fit: cover;
+    width: auto;
+}
+.kavi {
+    font-size: 60px;
+    margin-top: 43px;
+    line-height: 35px;
+    font-family: 'Pacifico', cursive;
+    transform: rotate(-10deg);
+}
+
+@media screen and (min-width: 1070px) {
+    #location-countdown  {
+        overflow: hidden;
+    }
+    #location-countdown video {
+        min-width: 100%; 
+        min-height: 100%; 
+      
+        /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+        width: auto;
+        height: auto;
+      
+        /* Center the video */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
